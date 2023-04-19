@@ -1,0 +1,59 @@
+---
+title: "Data 607 Week 11 Discussion Prompt - Recommender Systems"
+author: "Mohamed Hassan-El Serafi"
+date: "2023-04-18"
+output: html_document
+---
+
+# Analyzing YouTube Recommender System
+
+Your task is to analyze an existing Recommender system that you find interesting. You should:
+
+1. Perform a Scenario Design analysis as described below.  Consider whether it makes sense for your selected Recommender system to perform scenario design twice, once for the organization (e.g. Amazon.com) and once for the organization's customers.
+2. Attempt to reverse engineer what you can about the site, from the site interface and any available information that you can find on the Internet or elsewhere.
+3. Include specific recommendations about how to improve the site's recommendation capabilities going forward. 
+
+
+
+## Scenario Design Analysis 
+
+I think it makes sense for YouTube to also have a scenario design. There are users who may act in bad faith and use the platform to spread disinformation or for other nefarious reasons that would affect the organization's key goals in attracting advertisers, increasing users and subscribers, and ultimately making profits. 
+
+
+### Who are your target users?
+
+The target users are users who will continuously click, view, and share content on YouTube. 
+
+
+### What are their key goals?
+
+The key goals are to provide content based on user activity that will result in users continuing to view more content.
+
+
+
+### How can you help them accomplish those goals?
+
+
+Expanding the platform by adding other features that would increase the amount of users and subscribers. For example, a recent feature added allows YouTube users to continue watching videos outside of the app. Previously, this feature was only available for YouTube monthly subscribers.
+
+
+
+
+## Reverse Engineer YouTube 
+
+YouTube uses Deep Neural Networks to split the user activity history into two groups: candidate generation and ranking. According to the VP of Engineering at YouTube, the recommender system uses clicks, watchtime, survey responses, shares, likes, and dislikes of a user in the candidate generation group. Additionally, YouTube's recommender system uses classifiers of content that are considered either authoritative or borderline. Content deemed borderline are inaccurate, misleading or deceptive; insensitive or intolerant; and harmful or with the potential to cause harm. Content considered authoritative have reasonably more rigorous measurements it must meet in order to have a high ranking and become promoted and recommended. Using other candidate sources, I would use the recommender system to filter out borderline content and block that content from being used in the candidate generation group to ensure that users wouldn't be exposed to content that can be detrimental.  
+
+
+## How to Improve YouTube's Recommendation Capabilities
+
+From reading a couple of articles about YouTube's Recommender system, the dislike button isn't factored in the Machine Learning process when recommending content. I think if videos reach a certain threshold of dislikes, it should be considered to be demoted. Dislikes should be given less weight in its modeling techniques. Furthermore, content marked as borderline should not be included in any recommender system. If it is deemed harmful or misleading, there shouldn't be any path for it to be recommended. There is certainly bias involved when determining borderline and authoritative content. A more structured criteria should be constructed to eliminate any bias in this process.
+
+
+## Sources
+
+* https://techcrunch.com/2022/09/20/youtubes-dislike-and-not-interested-options-dont-do-much-for-your-recommendations-study-says/
+
+* https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf
+
+* https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/
+
